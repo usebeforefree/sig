@@ -137,7 +137,7 @@ pub const UdpSocket = struct {
     }
 };
 
-pub const SocketAddr = union(enum(u8)) {
+pub const SocketAddr = union(enum(u1)) {
     V4: SocketAddrV4,
     V6: SocketAddrV6,
 
